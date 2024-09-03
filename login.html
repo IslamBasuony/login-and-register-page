@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login/Register Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content" id="content">
+            <h1>Welcome Back!</h1>
+            <p>Login to Riddlebook & get going with your hunt!</p>
+            <button class="button" id="toggleButton" onclick="toggleForm()">Register</button>
+        </div>
+        <div class="form-container">
+            <div class="form login active" id="loginForm">
+                <h2>Login</h2>
+                <form>
+                    <input type="email" placeholder="Email" required><br>
+                    <input type="password" placeholder="Password" required><br>
+                    <label>
+                        <input type="checkbox"> Keep me signed in
+                    </label><br>
+                    <button type="submit">Login</button>
+                    <p><a href="#" style="color: #ecf0f1;">Forgot Password?</a></p>
+                    <p>Or login with 
+                        <a href="#"><i class="fa fa-facebook"></i></a> 
+                        <a href="#"><i class="fa fa-google"></i></a>
+                    </p>
+                    <p>Do not have an account yet? <a href="#" style="color: #27ae60;" onclick="toggleForm()">Join Now</a></p>
+                </form>
+            </div>
+            <div class="form register" id="registerForm">
+                <h2>Register</h2>
+                <form>
+                    <input type="text" placeholder="Username" required><br>
+                    <input type="email" placeholder="Email" required><br>
+                    <input type="password" placeholder="Password" required><br>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="dinamc.js"></script>
+</body>
+</html>
